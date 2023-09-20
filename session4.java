@@ -1,5 +1,5 @@
 import java.util.*;
-public class Class3 {
+public class session4 {
     public static void main(String[] args) {
         //highest prime fractor
         Scanner sc=new Scanner(System.in);
