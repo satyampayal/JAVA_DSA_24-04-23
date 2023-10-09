@@ -17,20 +17,20 @@ public class AnagramCheck {
      //   System.out.println(arr);
      int i=0;
      int flag=1;
-        //    for(int j=0;j<arr.length;j++){
-        //      System.out.println(arr[j]);
+           for(int j=0;j<arr.length;j++){
+             System.out.println(arr[j]);
 
-        //          if(arr[j]==arr2[i]){
-        //             System.out.println(arr2[i]);
-        //             i++;
-        //             flag=1;
-        //          }
-        //          else{
-        //            flag=0;
+                 if(arr[j]==arr2[i]){
+                    System.out.println(arr2[i]);
+                    i++;
+                    flag=1;
+                 }
+                 else{
+                   flag=0;
 
-        //             break;
-        //          }
-        //    }
+                    break;
+                 }
+           }
            if(flag==1){
             System.out.println("True");
            }
