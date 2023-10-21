@@ -6,3 +6,6 @@ DRY principle-> any statment are not copy line and execute
                     2>> make function 
 
 single 
+
+
+// we make 

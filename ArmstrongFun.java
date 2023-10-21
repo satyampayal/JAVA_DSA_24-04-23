@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ArmstrongFun {
 
     static int countDig(int temp) {
@@ -44,6 +46,11 @@ public class ArmstrongFun {
     public static void main(String[] args) {
         // Solution obj1;
         // obj1.isArm(153);
-        isArm(153);
+       
+        Scanner sc = new Scanner(System.in);
+        int n;
+        n=sc.nextInt();
+         isArm(n);
+        sc.close();
     }
 }
