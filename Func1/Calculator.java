@@ -3,45 +3,46 @@ package Func1;
 import java.util.Scanner;
 
 public class Calculator {
-    static int Addaition() {
+    static void print(String opr){
+   System.out.println("Enter Two number for "+opr);
+    }
+    static int[] input() {
         int a, b;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Two number for addation");
         a = sc.nextInt();
         b = sc.nextInt();
         sc.close();
+        int[] arr = { a, b };
+        return arr;
+    }
 
-        return a + b;
+    static int Addaition() {
+
+         print("Add");
+        int[] arr = input();
+        return arr[0] + arr[1];
     }
 
     static int Subtraction() {
-        int a, b;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Two number for sub");
-        a = sc.nextInt();
-        b = sc.nextInt();
-        sc.close();
-        return a - b;
+        
+         print("Subtraction");
+        int[] arr = input();
+        return arr[0] - arr[1];
     }
 
     static int Mutiplication() {
-        int a, b;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Two number for Mul");
-        a = sc.nextInt();
-        b = sc.nextInt();
-        sc.close();
-        return a * b;
+     
+     print("Multiplication");
+      
+        int[] arr = input();
+        return arr[0]*arr[1];
     }
 
     static int Division() {
-        int a, b;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Two number for Divide");
-        a = sc.nextInt();
-        b = sc.nextInt();
-        sc.close();
-        return a / b;
+   
+       print("Division");
+       int[] arr = input();
+        return arr[0] /arr[1];
     }
 
     public static void main(String[] args) {
