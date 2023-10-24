@@ -3,9 +3,10 @@ package Func1;
 import java.util.Scanner;
 
 public class Calculator {
-    static void print(String opr){
-   System.out.println("Enter Two number for "+opr);
+    static void print(String opr) {
+        System.out.println("Enter Two number for " + opr);
     }
+
     static int[] input() {
         int a, b;
         Scanner sc = new Scanner(System.in);
@@ -18,35 +19,36 @@ public class Calculator {
 
     static int Addaition() {
 
-         print("Add");
+        print("Add");
         int[] arr = input();
         return arr[0] + arr[1];
     }
 
     static int Subtraction() {
-        
-         print("Subtraction");
+
+        print("Subtraction");
         int[] arr = input();
         return arr[0] - arr[1];
     }
 
     static int Mutiplication() {
-     
-     print("Multiplication");
-      
+
+        print("Multiplication");
+
         int[] arr = input();
-        return arr[0]*arr[1];
+        return arr[0] * arr[1];
     }
 
     static int Division() {
-   
-       print("Division");
-       int[] arr = input();
-        return arr[0] /arr[1];
+
+        print("Division");
+        int[] arr = input();
+        return arr[0] / arr[1];
     }
 
     public static void main(String[] args) {
 
+        
         System.out.println("Enter your Choice");
         System.out.println("1.Addaition");
         System.out.println("2.Subtraction");
