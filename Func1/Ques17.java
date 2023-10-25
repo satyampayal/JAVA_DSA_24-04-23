@@ -9,18 +9,18 @@ public class Ques17 {
         int flag = 1;
 
         for (int num = 2; num <= 100; num++) {
-            for (int i = 2; i < num / 2; i++) {
+            for (int i = num/2; i >=2; i--) {
                 if (num % i == 0) {
                     flag = 0;
+                    break;
 
                 }
-                if (flag == 0) {
-                    System.out.print(num +" ");
-                    flag=1;
-                    break;
-                }
+
             }
-           
+            if (flag == 1) {
+                System.out.print(num + " ");
+            }
+            flag = 1;
         }
     }
 
