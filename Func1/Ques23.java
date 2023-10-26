@@ -2,8 +2,8 @@ package Func1;
 
 import java.util.Scanner;
 
-// WAP to reverse the no.
-public class Ques21 {
+//WAP to print the square root of a no.
+public class Ques23 {
      static int input(){
         Scanner sc= new Scanner(System.in);
         int num;
@@ -12,17 +12,7 @@ public class Ques21 {
           sc.close();
         return num;
     }
-    static int reverse(int num){
-        int copyOfNum=0;
-        while(num!=0){
-            int digit=num%10;
-            copyOfNum=copyOfNum*10+digit;
-            num/=10;
-        }
-        return copyOfNum;
-    }
-
     public static void main(String[] args) {
-        System.err.println(reverse(input()));
+        
     }
 }
