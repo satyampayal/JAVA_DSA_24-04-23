@@ -7,7 +7,7 @@ public class Ques23 {
      static int input(){
         Scanner sc= new Scanner(System.in);
         int num;
-        System.out.println("Enter number for reverse Number:");
+        System.out.println("Enter number for SquareRoot of a given Number:");
         num=sc.nextInt();
           sc.close();
         return num;
