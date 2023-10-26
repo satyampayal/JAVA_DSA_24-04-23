@@ -2,8 +2,8 @@ package Func1;
 
 import java.util.Scanner;
 
-//WAP to print the square root of a no.
-public class Ques23 {
+// WAP to print sum of  1+2+3+.............................n 
+public class Ques24 {
      static int input(){
         Scanner sc= new Scanner(System.in);
         int num;
@@ -12,17 +12,7 @@ public class Ques23 {
           sc.close();
         return num;
     }
-
-    static int squareRoot(int num){
-        int ans=1;
-        for(int i=1;i<=num;i++){
-              if(i*i<=num){
-               ans=i;
-              }
-        }
-        return ans;
-    }
     public static void main(String[] args) {
-        System.out.println(squareRoot(input()));
+        
     }
 }
