@@ -37,10 +37,11 @@ class LL{
             return;
         }
         Node currNode=Head;
-        while(currNode!=null){
+        while(currNode.next!=null){
             currNode=currNode.next;
         }
         currNode.next=newNode;
+       
 
     }
     public void print(){
@@ -50,17 +51,53 @@ class LL{
         }
         Node curr=Head;
         while(curr!=null){
-            System.out.print(curr.next+"->");
+            System.out.print(curr.data+"->");
             curr=curr.next;
         }
-        System.out.print("->null");
+        System.out.print("null");
+    }
+    public void deletFirst(){
+        if(Head==null){
+            System.out.println("List is empty");
+            return;
+        }
+       // System.out.println("Delte is ->"+Head.data);
+        Head=Head.next;
+    }
+    public void lastDelete(){
+        if(Head==null){
+             System.out.println("List is empty");
+            return;
+        }
+        if(Head.next==null){
+            Head=null;
+            return;
+        }
+        Node secondLast=Head;
+        Node lastNode=Head.next;// if Head.next.next then its delet two 
+
+        while(lastNode.next!=null){
+            lastNode=lastNode.next;
+            secondLast=secondLast.next;
+        }
+               
+        //System.out.println("Last Node Delte "+lastNode.data);
+       secondLast.next=null;
     }
     public static void main(String[] args) {
         LL list=new LL();
         list.addFirst("This");        
         list.addFirst("is");
-        list.addFirst("This");        
-        list.addFirst("is");
+        list.addFirst("3");        
+        list.addFirst("4");
+        list.addLast("last");
+        list.deletFirst();        
+        list.deletFirst();
+         list.print();
+        System.out.println();
+
+        list.lastDelete();
+
 
         list.print();
     }
