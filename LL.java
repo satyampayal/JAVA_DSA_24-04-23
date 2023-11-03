@@ -84,19 +84,39 @@ class LL{
         //System.out.println("Last Node Delte "+lastNode.data);
        secondLast.next=null;
     }
+
+    public void reverseIterartor(){
+        if(Head==null){
+            System.out.println("List is empty");
+            return;
+        }
+       
+        // if(Head.next==null){
+        //    Head=Head.next;
+        //     return;
+        // }
+         Node prev=Head;
+        Node curr=Head.next;
+        while(curr!=null){
+            Node nextNode=curr.next;
+            curr.next=prev;
+            // update
+            prev=curr;
+            curr=nextNode;
+        } 
+    }
     public static void main(String[] args) {
         LL list=new LL();
         list.addFirst("This");        
-        list.addFirst("is");
-        list.addFirst("3");        
-        list.addFirst("4");
-        list.addLast("last");
-        list.deletFirst();        
-        list.deletFirst();
+        list.addFirst("is");        
+        list.addFirst("me");
+
+      
+     
          list.print();
         System.out.println();
-
-        list.lastDelete();
+        list.reverseIterartor();
+      
 
 
         list.print();

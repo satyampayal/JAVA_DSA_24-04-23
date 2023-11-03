@@ -6,14 +6,15 @@ public class PrimeRec {
             prime(n, a + 1);
         } else {
             if (a > n / 2)
-                System.out.println(n + " Is prime");
-            else
-                System.out.println("Not Prime");
+                System.out.println(n + " Is prime ");
+            // else
+            //     System.out.println("Not Prime");
             return;
         }
     }
 
     public static void main(String[] args) {
-        prime(37, 2);
+        for(int i=1000;i>2;i--){
+             prime(i, 2);}
     }
 }
